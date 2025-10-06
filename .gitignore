@@ -1,0 +1,54 @@
+# --- TERRAFORM ---
+
+# Archivos de estado y respaldo (contienen información sensible)
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*.override.tf
+*.override.tf.json
+
+# Archivos generados automáticamente por Terraform
+.terraform/
+.terraform.lock.hcl
+.terraform.tfstate.backup
+
+# Variables locales o sensibles
+terraform.tfvars
+terraform.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Archivos de salida o temporales
+*.bak
+*.tmp
+*.swp
+*.log
+
+# Archivos de credenciales o configuraciones de nube
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+*.json
+*.yaml
+*.yml
+.env
+secrets.*
+credentials.*
+
+# Archivos del sistema / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
+# Archivos de compilación o cache
+__pycache__/
+*.pyc
+*.pyo
+*.class
