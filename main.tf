@@ -21,15 +21,15 @@ module "network" {
   region       = var.region
   network_name = var.network_name
   subnet_name  = var.subnet_name
-  vpc_name = "web-app-vpc"
+  vpc_name     = "web-app-vpc"
 }
 
 # Módulo de compute (instancia)
 module "compute" {
-  source        = "./modules/compute"
-  project_id    = var.project_id
-  zone          = var.zone
-  instance_name = var.instance_name
-  machine_type  = var.machine_type
+  source           = "./modules/compute"
+  project_id       = var.project_id
+  zone             = var.zone
+  instance_name    = var.instance_name
+  machine_type     = var.machine_type
   subnet_self_link = module.network.subnet_self_link
 }
