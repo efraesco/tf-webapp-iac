@@ -26,6 +26,7 @@ terraform.tfvars.json
 *.tmp
 *.swp
 *.log
+.~lock.*
 
 # Archivos de credenciales o configuraciones de nube
 *.pem
